@@ -565,7 +565,7 @@ var app = (function () {
     			h52 = element("h5");
     			t22 = text("Comorbidades ");
     			span = element("span");
-    			span.textContent = "(hipertensão, diabetes mellitus, obesidade, doença coronariana, insuficiência cardíaca, fibilação ou flutter atrial, cirrose, cancer e acidente vascular encefálico prévio)";
+    			span.textContent = "(hipertensão, diabetes mellitus, obesidade, doença coronariana, insuficiência cardíaca, fibrilação ou flutter atrial, cirrose, câncer e acidente vascular encefálico prévio)";
     			t24 = space();
     			div10 = element("div");
     			input6 = element("input");
@@ -694,7 +694,7 @@ var app = (function () {
     			div42 = element("div");
     			div41 = element("div");
     			h59 = element("h5");
-    			h59.textContent = "Mortalidade Predita (%)";
+    			h59.textContent = "Mortalidade intra-hospitalar (%)";
     			t86 = space();
     			h32 = element("h3");
     			t87 = text(/*probability*/ ctx[2]);
@@ -1241,13 +1241,13 @@ var app = (function () {
 
     function calculateRiskGroup(params) {
     	if (params <= 1) {
-    		return "Baixa";
+    		return "Baixo";
     	} else if (params >= 2 && params <= 4) {
-    		return "Intermediária";
+    		return "Intermediário";
     	} else if (params >= 5 && params <= 8) {
-    		return "Alta";
+    		return "Alto";
     	} else if (params >= 9) {
-    		return "Muito Alta";
+    		return "Muito alto";
     	}
     }
 
